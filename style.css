@@ -66,7 +66,7 @@ body{
 }
 /* ***main body*** */
 .mainBody{
-    height:calc(100vh-70px) ;
+    height:90vh;
     display: flex;
     overflow: hidden;
 }
