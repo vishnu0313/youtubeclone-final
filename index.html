@@ -1,206 +1,554 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="icon" href="./images/youtube header logo.png">
     <link rel="stylesheet" href="style.css">
-    <title>YouTube</title>
 </head>
 <body>
-    <!-- header -->
+    <!-- header starts  -->
     <div class="header">
         <div class="header_left">
-            <i class="material-symbols-outlined">menu</i>
-            <img src="images/youtube logo.avif">
+            <i id="menu" class="material-symbols-outlined">menu</i>
+            <img src="images/youtube logo.avif" alt="">
         </div>
         <div class="header_search">
             <form action="">
-                <input type="text" placeholder="Search">
+                <input type="text" placeholder="search">
                 <button><i class="material-symbols-outlined">search</i></button>
-                <i class="material-symbols-outlined">mic</i>
             </form>
         </div>
         <div class="header_icons">
-            <i class="material-symbols-outlined">videocam</i>
+            <i class="material-symbols-outlined display-this ">search</i>
+            <i class="material-symbols-outlined">video_call</i>
             <i class="material-symbols-outlined">notifications</i>
-            <i class="material-symbols-outlined">account_circle</i>
+            <i class="material-symbols-outlined this-too ">account_circle</i>
         </div>
     </div>
-    <!-- main body -->
-    <div class="mainBody">
-        <div class="sidebar">
-            <div class="sidebar_categories">
-                <div class="sidebar_category">
-                    <i class="material-symbols-outlined">home</i>
-                    <span>Home</span>
-                </div>
-                <div class="sidebar_category">
-                    <i class="material-symbols-outlined">shop_two</i>
-                    <span>Shorts</span>
-                </div>
-                <div class="sidebar_category">
-                    <i class="material-symbols-outlined">subscriptions</i>
-                    <span>Subscriptions</span>
-                </div>
+    <!-- /header ends -->
+
+<!-- main body starts -->
+<div class="mainBody">
+    <!-- sidebar starts here  -->
+    <div class="sidebar">
+        <div class="sidebar_categories">
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">home</i>
+                <span>Home</span>
             </div>
-            <hr />
-            <div class="sidebar_categories">
-                <div class="sidebar_category">
-                    <i class="material-symbols-outlined">history</i>
-                    <span>History</span>
-                </div>
-                <div class="sidebar_category">
-                    <i class="material-symbols-outlined">schedule</i>
-                    <span>Watch Later</span>
-                </div>
-                <div class="sidebar_category">
-                    <i class="material-symbols-outlined">thumb_up</i>
-                    <span>Liked Videos</span>
-                </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">video_library</i>
+                <span>Shorts</span>
             </div>
-            <hr /> 
-            <div class="sidebar_categories">
-                <div class="sidebar_category">
-                    <i class="material-symbols-outlined">local_fire_department</i>
-                    <span>Trending</span>
-                </div>
-                <div class="sidebar_category">
-                    <i class="material-symbols-outlined">shopping_bag</i>
-                    <span>Shopping</span>
-                </div>
-                <div class="sidebar_category">
-                    <i class="material-symbols-outlined">music_note</i>
-                    <span>Music</span>
-                </div>
-                <div class="sidebar_category">
-                    <i class="material-symbols-outlined">movie</i>
-                    <span>Film</span>
-                </div>
-                <div class="sidebar_category">
-                    <i class="material-symbols-outlined">sensors</i>
-                    <span>Live</span>
-                </div>
-                <div class="sidebar_category">
-                    <i class="material-symbols-outlined">stadia_controller</i>
-                    <span>Gaming</span>
-                </div>
-                <div class="sidebar_category">
-                    <i class="material-symbols-outlined">newsmode</i>
-                    <span>News</span>
-                </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">subscriptions</i>
+                <span>Subscriptions</span>
             </div>
-            <hr />
+            <hr>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">account_box</i>
+                <span>You</span>
+            </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">history</i>
+                <span>History</span>
+            </div>
+            <hr>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">local_fire_department</i>
+                <span>Trending</span>
+            </div>
+            
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">local_mall</i>
+                <span>Shopping</span>
+            </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">music_note</i>
+                <span>Music</span>
+            </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">movie</i>
+                <span>Film</span>
+            </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">sensors</i>
+                <span>Live</span>
+            </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">sports_esports</i>
+                <span>Gaming</span>
+            </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">newsmode</i>
+                <span>News</span>
+            </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">trophy</i>
+                <span>Sports</span>
+            </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">lightbulb</i>
+                <span>Learning</span>
+            </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">styler</i>
+                <span>Fashion & Beauty</span>
+            </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">podcasts</i>
+                <span>Podcasts</span>
+            </div>
+            <hr>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">add_circle</i>
+                <span>Browse channels</span>
+            </div>
+            <hr>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">settings</i>
+                <span>Settings</span>
+            </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">flag</i>
+                <span>Report history</span>
+            </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">help</i>
+                <span>Help</span>
+            </div>
+            <div class="sidebar_category">
+                <i class="material-symbols-outlined">chat_info</i>
+                <span>Send feedback</span>
+            </div>
+            <hr>
         </div>
-        <!---------- video section ----------->
-
-        <div class="videos">
-            <h1>Recommended</h1>
-            <div class="videos_container">
-                <!-- single video  -->
-                <div class="video">
-                    <div class="video_thumbnail">
-                        <img src="images/Coding Exercise for Beginners in Python.jpg">
-                    </div>
-                    <div class="video_details">
-                        <div class="author">
-                            <img src="images/jennys lectures profile pic.jpg">
-                        </div>
-                        <div class="title">
-                            <h3>Coding Exercise for Beginners in Python |Exercise 15 | Python Tutorials for Beginners #lec45</h3>
-                            <a href="https://www.youtube.com/@JennyslecturesCSIT">Jenny's Lectures CS IT</a>
-                            <span>24K views  10 months ago</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- single video  -->
-                <div class="video">
-                    <div class="video_thumbnail">
-                        <img src="images/Work Music For Concentration and Focus — Noir Chillstep Playlist.jpg">
-                    </div>
-                    <div class="video_details">
-                        <div class="author">
-                            <img src="images/chill music profile pic.jpg">
-                        </div>
-                        <div class="title">
-                            <h3>Work Music For Concentration and Focus — Noir Chillstep Playlist</h3>
-                            <a href="https://www.youtube.com/@MusicLabChill">Chill Music Lab</a>
-                            <span>2.3M views  1 year ago</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- single video  -->
-                <div class="video">
-                    <div class="video_thumbnail">
-                        <img src="images/Harvard Professor Explains Algorithms in 5 Levels of Difficulty.jpg">
-                    </div>
-                    <div class="video_details">
-                        <div class="author">
-                            <img src="images/wired profile pic.jpg">
-                        </div>
-                        <div class="title">
-                            <h3>Harvard Professor Explains Algorithms in 5 Levels of Difficulty | WIRED</h3>
-                            <a href="https://www.youtube.com/@WIRED">WIRED</a>
-                            <span>1.5M views  3 months ago</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- single video  -->
-                <div class="video">
-                    <div class="video_thumbnail">
-                        <img src="images/Ducati Multistrada V4 RS.jpg">
-                    </div>
-                    <div class="video_details">
-                        <div class="author">
-                            <img src="images/Ducati logo.jpg">
-                        </div>
-                        <div class="title">
-                            <h3>Ducati Multistrada V4 RS | Choose it All</h3>
-                            <a href="https://www.youtube.com/@ducati">Ducati</a>
-                            <span>93K views  3 months ago</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- single video  -->
-                <div class="video">
-                    <div class="video_thumbnail">
-                        <img src="images/The Single Greatest Mistake A Man Can Make.jpg">
-                    </div>
-                    <div class="video_details">
-                        <div class="author">
-                            <img src="images/motivation madness profile pic.jpg">
-                        </div>
-                        <div class="title">
-                            <h3>The Single Greatest Mistake A Man Can Make | Jordan Peterson</h3>
-                            <a href="https://www.youtube.com/@MotivationMadness">Motivation Madness</a>
-                            <span>470K views  1 year ago</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- single video  -->
-                <div class="video">
-                    <div class="video_thumbnail">
-                        <img src="images/KILLER LEG DAY  FULL WORKOUT.jpg">
-                    </div>
-                    <div class="video_details">
-                        <div class="author">
-                            <img src="images/cbum profilepic.jpg">
-                        </div>
-                        <div class="title">
-                            <h3>KILLER LEG DAY | FULL WORKOUT</h3>
-                            <a href="https://www.youtube.com/@ChrisBumstead">Chris Bumstead</a>
-                            <span>4.7M views  2 years ago
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
     </div>
-    
+<!-- sidebar ends her -->
+
+<div class="videos">
+    <h1>Recommended</h1>
+    <div class="videos_container">
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="https://i.ytimg.com/vi/sI_Wb3JPQg8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAI-fnHFNzr3hdcrhIQgbxYQ1Te2w">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="https://yt3.googleusercontent.com/W9ySfNFEzjhBPkGKB7VCjxPhtOz8uT4k0OFij6Du8E4JzcE_Xp9knl75HlBGFKB8LUvdvEQVPA=s900-c-k-c0x00ffffff-no-rj">
+                </div>
+                <div class="title">
+                    <h3>Coding Exercise for Beginners in Python |Exercise 15 | Python Tutorials for Beginners #lec45</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@JennyslecturesCSIT">Jenny's Lectures CS IT</a>
+                    <span>24K views  10 months ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="https://i.ytimg.com/vi/5i0Z0E5yaYI/maxresdefault.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="https://yt3.googleusercontent.com/9k0N3CXvGaQj44oSDb-r63amGX2w-orEyp409sTBp0tK4WEuZTJcdhO5XzmWaschG1aCcVjWnA=s900-c-k-c0x00ffffff-no-rj">
+                </div>
+                <div class="title">
+                    <h3>Work Music For Concentration and Focus — Noir Chillstep Playlist</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@MusicLabChill">Chill Music Lab</a>
+                    <span>2.3M views  1 year ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_wired.png,fl_progressive,g_face,h_1080,q_80,w_1920/v1699456565/wired_5-levels-wi-5-levels-algorithm.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="https://yt3.ggpht.com/ytc/AIf8zZRyN4syu1BXFW3adNWu43wzaJvZEz52hVlp23PT47A=s88-c-k-c0x00ffffff-no-rj">
+                </div>
+                <div class="title">
+                    <h3>Harvard Professor Explains Algorithms in 5 Levels of Difficulty | WIRED</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@WIRED">WIRED</a>
+                    <span>1.5M views  3 months ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="https://i.ytimg.com/vi/HOe1UupzCHI/maxresdefault.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIf8zZRYooc2mUWdsMilyHwE-4VHMhQ4DvvksGYvE6e21g=s900-c-k-c0x00ffffff-no-rj">
+                </div>
+                <div class="title">
+                    <h3>Ducati Multistrada V4 RS | Choose it All</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@ducati">Ducati</a>
+                    <span>93K views  3 months ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="https://i.ytimg.com/vi/YxwLMXG-lz8/maxresdefault.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQuHHaBeZLguNLCWri0f7OcERmAL5G2fmYbVaOqPQ=s900-c-k-c0x00ffffff-no-rj
+                    ">
+                </div>
+                <div class="title">
+                    <h3>The Single Greatest Mistake A Man Can Make | Jordan Peterson</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@MotivationMadness">Motivation Madness</a>
+                    <span>470K views  1 year ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="https://i.ytimg.com/vi/SDAVyMuPah0/maxresdefault.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIf8zZTepEdrka3Rzgcw_kSuaAIcFBp73M7QClU2kK9f0g=s900-c-k-c0x00ffffff-no-rj
+                    ">
+                </div>
+                <div class="title">
+                    <h3>KILLER LEG DAY | FULL WORKOUT</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@ChrisBumstead">Chris Bumstead</a>
+                    <span>4.7M views  2 years ago
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/bootstrap malayalam brototype.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/brototype profile pic.jpg">
+                </div>
+                <div class="title">
+                    <h3>Part 8 | Bootstrap | Web Designing Malayalam Tutorial</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@BrototypeMalayalam">Brototype Malayalam</a>
+                    <span>
+                        124K views  3 years ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/Python or JavaScript - Which One Should YOU Learn.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/hech with tim profile pic.jpg">
+                </div>
+                <div class="title">
+                    <h3>Python or JavaScript - Which One Should YOU Learn?</h3>
+                    <a class="text-decoration-none " href="https://www.youtube.com/@TechWithTim">Tech With Tim</a>
+                    <span>
+                        38K views  3 days ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/SHELDON TEACHES PENNY PHYSICS.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/tv series top profile pic.jpg">
+                </div>
+                <div class="title">
+                    <h3>SHELDON TEACHES PENNY PHYSICS | The Big Bang Theory best scenes</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@tvseriestop3950"> TV SERIES TOP</a>
+                    <span>344K views  2 years ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/Coding Exercise for Beginners in Python.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/jennys lectures profile pic.jpg">
+                </div>
+                <div class="title">
+                    <h3>Coding Exercise for Beginners in Python |Exercise 15 | Python Tutorials for Beginners #lec45</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@JennyslecturesCSIT">Jenny's Lectures CS IT</a>
+                    <span>24K views  10 months ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/Work Music For Concentration and Focus — Noir Chillstep Playlist.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/chill music profile pic.jpg">
+                </div>
+                <div class="title">
+                    <h3>Work Music For Concentration and Focus — Noir Chillstep Playlist</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@MusicLabChill">Chill Music Lab</a>
+                    <span>2.3M views  1 year ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/Harvard Professor Explains Algorithms in 5 Levels of Difficulty.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/wired profile pic.jpg">
+                </div>
+                <div class="title">
+                    <h3>Harvard Professor Explains Algorithms in 5 Levels of Difficulty | WIRED</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@WIRED">WIRED</a>
+                    <span>1.5M views  3 months ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/Ducati Multistrada V4 RS.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/Ducati logo.jpg">
+                </div>
+                <div class="title">
+                    <h3>Ducati Multistrada V4 RS | Choose it All</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@ducati">Ducati</a>
+                    <span>93K views  3 months ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/The Single Greatest Mistake A Man Can Make.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/motivation madness profile pic.jpg">
+                </div>
+                <div class="title">
+                    <h3>The Single Greatest Mistake A Man Can Make | Jordan Peterson</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@MotivationMadness">Motivation Madness</a>
+                    <span>470K views  1 year ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/KILLER LEG DAY  FULL WORKOUT.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/cbum profilepic.jpg">
+                </div>
+                <div class="title">
+                    <h3>KILLER LEG DAY | FULL WORKOUT</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@ChrisBumstead">Chris Bumstead</a>
+                    <span>4.7M views  2 years ago
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/bootstrap malayalam brototype.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/brototype profile pic.jpg">
+                </div>
+                <div class="title">
+                    <h3>Part 8 | Bootstrap | Web Designing Malayalam Tutorial</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@BrototypeMalayalam">Brototype Malayalam</a>
+                    <span>
+                        124K views  3 years ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/Python or JavaScript - Which One Should YOU Learn.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/hech with tim profile pic.jpg">
+                </div>
+                <div class="title">
+                    <h3>Python or JavaScript - Which One Should YOU Learn?</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@TechWithTim">Tech With Tim</a>
+                    <span>
+                        38K views  3 days ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/SHELDON TEACHES PENNY PHYSICS.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/tv series top profile pic.jpg">
+                </div>
+                <div class="title">
+                    <h3>SHELDON TEACHES PENNY PHYSICS | The Big Bang Theory best scenes</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@tvseriestop3950"> TV SERIES TOP</a>
+                    <span>344K views  2 years ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="https://i.ytimg.com/vi/sI_Wb3JPQg8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAI-fnHFNzr3hdcrhIQgbxYQ1Te2w">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="https://yt3.googleusercontent.com/W9ySfNFEzjhBPkGKB7VCjxPhtOz8uT4k0OFij6Du8E4JzcE_Xp9knl75HlBGFKB8LUvdvEQVPA=s900-c-k-c0x00ffffff-no-rj">
+                </div>
+                <div class="title">
+                    <h3>Coding Exercise for Beginners in Python |Exercise 15 | Python Tutorials for Beginners #lec45</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@JennyslecturesCSIT">Jenny's Lectures CS IT</a>
+                    <span>24K views  10 months ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="https://i.ytimg.com/vi/5i0Z0E5yaYI/maxresdefault.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="https://yt3.googleusercontent.com/9k0N3CXvGaQj44oSDb-r63amGX2w-orEyp409sTBp0tK4WEuZTJcdhO5XzmWaschG1aCcVjWnA=s900-c-k-c0x00ffffff-no-rj">
+                </div>
+                <div class="title">
+                    <h3>Work Music For Concentration and Focus — Noir Chillstep Playlist</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@MusicLabChill">Chill Music Lab</a>
+                    <span>2.3M views  1 year ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_wired.png,fl_progressive,g_face,h_1080,q_80,w_1920/v1699456565/wired_5-levels-wi-5-levels-algorithm.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="https://yt3.ggpht.com/ytc/AIf8zZRyN4syu1BXFW3adNWu43wzaJvZEz52hVlp23PT47A=s88-c-k-c0x00ffffff-no-rj">
+                </div>
+                <div class="title">
+                    <h3>Harvard Professor Explains Algorithms in 5 Levels of Difficulty | WIRED</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@WIRED">WIRED</a>
+                    <span>1.5M views  3 months ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/Ducati Multistrada V4 RS.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/Ducati logo.jpg">
+                </div>
+                <div class="title">
+                    <h3>Ducati Multistrada V4 RS | Choose it All</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@ducati">Ducati</a>
+                    <span>93K views  3 months ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/The Single Greatest Mistake A Man Can Make.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/motivation madness profile pic.jpg">
+                </div>
+                <div class="title">
+                    <h3>The Single Greatest Mistake A Man Can Make | Jordan Peterson</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@MotivationMadness">Motivation Madness</a>
+                    <span>470K views  1 year ago</span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/KILLER LEG DAY  FULL WORKOUT.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/cbum profilepic.jpg">
+                </div>
+                <div class="title">
+                    <h3>KILLER LEG DAY | FULL WORKOUT</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@ChrisBumstead">Chris Bumstead</a>
+                    <span>4.7M views  2 years ago
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- single video  -->
+        <div class="video">
+            <div class="video_thumbnail">
+                <img src="images/bootstrap malayalam brototype.jpg">
+            </div>
+            <div class="video_details">
+                <div class="author">
+                    <img src="images/brototype profile pic.jpg">
+                </div>
+                <div class="title">
+                    <h3>Part 8 | Bootstrap | Web Designing Malayalam Tutorial</h3>
+                    <a class="text-decoration-none" href="https://www.youtube.com/@BrototypeMalayalam">Brototype Malayalam</a>
+                    <span>
+                        124K views  3 years ago</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+<!-- main body ends -->
 </body>
 </html>
